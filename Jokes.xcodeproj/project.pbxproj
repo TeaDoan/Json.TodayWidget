@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		B0158ABC20EEC30200433281 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0158ABB20EEC30200433281 /* AppDelegate.swift */; };
-		B0158ABE20EEC30200433281 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0158ABD20EEC30200433281 /* ViewController.swift */; };
 		B0158AC120EEC30200433281 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0158ABF20EEC30200433281 /* Main.storyboard */; };
 		B0158AC320EEC30300433281 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0158AC220EEC30300433281 /* Assets.xcassets */; };
 		B0158AC620EEC30300433281 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0158AC420EEC30300433281 /* LaunchScreen.storyboard */; };
 		B0158AD120EEC30400433281 /* JokesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0158AD020EEC30400433281 /* JokesTests.swift */; };
 		B0158ADC20EEC30400433281 /* JokesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0158ADB20EEC30400433281 /* JokesUITests.swift */; };
+		B0158AEA20EEC61000433281 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0158AE920EEC61000433281 /* QuotesViewController.swift */; };
+		B0158AEC20EEC67D00433281 /* QuotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0158AEB20EEC67D00433281 /* QuotesTableViewCell.swift */; };
+		B067478D20F18CBA00BB1253 /* JokesInfoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B067478B20F18CBA00BB1253 /* JokesInfoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B067479020F18CBA00BB1253 /* JokesInfoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B067478920F18CBA00BB1253 /* JokesInfoKit.framework */; };
+		B067479120F18CBA00BB1253 /* JokesInfoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B067478920F18CBA00BB1253 /* JokesInfoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B067479620F18D4000BB1253 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0158AED20EEC96E00433281 /* Quotes.swift */; };
+		B067479720F18D4500BB1253 /* QuotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0158AEF20EED03E00433281 /* QuotesController.swift */; };
+		B067479F20F18E6F00BB1253 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B067479E20F18E6F00BB1253 /* NotificationCenter.framework */; };
+		B06747A220F18E6F00BB1253 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06747A120F18E6F00BB1253 /* TodayViewController.swift */; };
+		B06747A520F18E6F00BB1253 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B06747A320F18E6F00BB1253 /* MainInterface.storyboard */; };
+		B06747A920F18E6F00BB1253 /* TodayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B067479C20F18E6F00BB1253 /* TodayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B06747AE20F1905600BB1253 /* JokesInfoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B067478920F18CBA00BB1253 /* JokesInfoKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +42,50 @@
 			remoteGlobalIDString = B0158AB720EEC30200433281;
 			remoteInfo = Jokes;
 		};
+		B067478E20F18CBA00BB1253 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0158AB020EEC30200433281 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B067478820F18CBA00BB1253;
+			remoteInfo = JokesInfoKit;
+		};
+		B06747A720F18E6F00BB1253 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0158AB020EEC30200433281 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B067479B20F18E6F00BB1253;
+			remoteInfo = TodayWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B067479520F18CBA00BB1253 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B067479120F18CBA00BB1253 /* JokesInfoKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B06747AD20F18E6F00BB1253 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B06747A920F18E6F00BB1253 /* TodayWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B0158AB820EEC30200433281 /* Jokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0158ABB20EEC30200433281 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B0158ABD20EEC30200433281 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B0158AC020EEC30200433281 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0158AC220EEC30300433281 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0158AC520EEC30300433281 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +96,18 @@
 		B0158AD720EEC30400433281 /* JokesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JokesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0158ADB20EEC30400433281 /* JokesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesUITests.swift; sourceTree = "<group>"; };
 		B0158ADD20EEC30400433281 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0158AE920EEC61000433281 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
+		B0158AEB20EEC67D00433281 /* QuotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesTableViewCell.swift; sourceTree = "<group>"; };
+		B0158AED20EEC96E00433281 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
+		B0158AEF20EED03E00433281 /* QuotesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesController.swift; sourceTree = "<group>"; };
+		B067478920F18CBA00BB1253 /* JokesInfoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JokesInfoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B067478B20F18CBA00BB1253 /* JokesInfoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JokesInfoKit.h; sourceTree = "<group>"; };
+		B067478C20F18CBA00BB1253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B067479C20F18E6F00BB1253 /* TodayWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B067479E20F18E6F00BB1253 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		B06747A120F18E6F00BB1253 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		B06747A420F18E6F00BB1253 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		B06747A620F18E6F00BB1253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B067479020F18CBA00BB1253 /* JokesInfoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +133,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B067478520F18CBA00BB1253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B067479920F18E6F00BB1253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06747AE20F1905600BB1253 /* JokesInfoKit.framework in Frameworks */,
+				B067479F20F18E6F00BB1253 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +158,9 @@
 				B0158ABA20EEC30200433281 /* Jokes */,
 				B0158ACF20EEC30400433281 /* JokesTests */,
 				B0158ADA20EEC30400433281 /* JokesUITests */,
+				B067478A20F18CBA00BB1253 /* JokesInfoKit */,
+				B06747A020F18E6F00BB1253 /* TodayWidget */,
+				B067479D20F18E6F00BB1253 /* Frameworks */,
 				B0158AB920EEC30200433281 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +171,8 @@
 				B0158AB820EEC30200433281 /* Jokes.app */,
 				B0158ACC20EEC30300433281 /* JokesTests.xctest */,
 				B0158AD720EEC30400433281 /* JokesUITests.xctest */,
+				B067478920F18CBA00BB1253 /* JokesInfoKit.framework */,
+				B067479C20F18E6F00BB1253 /* TodayWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,8 +180,9 @@
 		B0158ABA20EEC30200433281 /* Jokes */ = {
 			isa = PBXGroup;
 			children = (
+				B0158AEB20EEC67D00433281 /* QuotesTableViewCell.swift */,
+				B0158AE920EEC61000433281 /* QuotesViewController.swift */,
 				B0158ABB20EEC30200433281 /* AppDelegate.swift */,
-				B0158ABD20EEC30200433281 /* ViewController.swift */,
 				B0158ABF20EEC30200433281 /* Main.storyboard */,
 				B0158AC220EEC30300433281 /* Assets.xcassets */,
 				B0158AC420EEC30300433281 /* LaunchScreen.storyboard */,
@@ -125,7 +209,47 @@
 			path = JokesUITests;
 			sourceTree = "<group>";
 		};
+		B067478A20F18CBA00BB1253 /* JokesInfoKit */ = {
+			isa = PBXGroup;
+			children = (
+				B0158AEF20EED03E00433281 /* QuotesController.swift */,
+				B0158AED20EEC96E00433281 /* Quotes.swift */,
+				B067478B20F18CBA00BB1253 /* JokesInfoKit.h */,
+				B067478C20F18CBA00BB1253 /* Info.plist */,
+			);
+			path = JokesInfoKit;
+			sourceTree = "<group>";
+		};
+		B067479D20F18E6F00BB1253 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B067479E20F18E6F00BB1253 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B06747A020F18E6F00BB1253 /* TodayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				B06747A120F18E6F00BB1253 /* TodayViewController.swift */,
+				B06747A320F18E6F00BB1253 /* MainInterface.storyboard */,
+				B06747A620F18E6F00BB1253 /* Info.plist */,
+			);
+			path = TodayWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B067478620F18CBA00BB1253 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B067478D20F18CBA00BB1253 /* JokesInfoKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		B0158AB720EEC30200433281 /* Jokes */ = {
@@ -135,10 +259,14 @@
 				B0158AB420EEC30200433281 /* Sources */,
 				B0158AB520EEC30200433281 /* Frameworks */,
 				B0158AB620EEC30200433281 /* Resources */,
+				B067479520F18CBA00BB1253 /* Embed Frameworks */,
+				B06747AD20F18E6F00BB1253 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B067478F20F18CBA00BB1253 /* PBXTargetDependency */,
+				B06747A820F18E6F00BB1253 /* PBXTargetDependency */,
 			);
 			name = Jokes;
 			productName = Jokes;
@@ -181,6 +309,41 @@
 			productReference = B0158AD720EEC30400433281 /* JokesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B067478820F18CBA00BB1253 /* JokesInfoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B067479420F18CBA00BB1253 /* Build configuration list for PBXNativeTarget "JokesInfoKit" */;
+			buildPhases = (
+				B067478420F18CBA00BB1253 /* Sources */,
+				B067478520F18CBA00BB1253 /* Frameworks */,
+				B067478620F18CBA00BB1253 /* Headers */,
+				B067478720F18CBA00BB1253 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JokesInfoKit;
+			productName = JokesInfoKit;
+			productReference = B067478920F18CBA00BB1253 /* JokesInfoKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B067479B20F18E6F00BB1253 /* TodayWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B06747AA20F18E6F00BB1253 /* Build configuration list for PBXNativeTarget "TodayWidget" */;
+			buildPhases = (
+				B067479820F18E6F00BB1253 /* Sources */,
+				B067479920F18E6F00BB1253 /* Frameworks */,
+				B067479A20F18E6F00BB1253 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayWidget;
+			productName = TodayWidget;
+			productReference = B067479C20F18E6F00BB1253 /* TodayWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +365,12 @@
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = B0158AB720EEC30200433281;
 					};
+					B067478820F18CBA00BB1253 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					B067479B20F18E6F00BB1253 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 				};
 			};
 			buildConfigurationList = B0158AB320EEC30200433281 /* Build configuration list for PBXProject "Jokes" */;
@@ -220,6 +389,8 @@
 				B0158AB720EEC30200433281 /* Jokes */,
 				B0158ACB20EEC30300433281 /* JokesTests */,
 				B0158AD620EEC30400433281 /* JokesUITests */,
+				B067478820F18CBA00BB1253 /* JokesInfoKit */,
+				B067479B20F18E6F00BB1253 /* TodayWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +420,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B067478720F18CBA00BB1253 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B067479A20F18E6F00BB1253 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06747A520F18E6F00BB1253 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -256,8 +442,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0158ABE20EEC30200433281 /* ViewController.swift in Sources */,
 				B0158ABC20EEC30200433281 /* AppDelegate.swift in Sources */,
+				B0158AEA20EEC61000433281 /* QuotesViewController.swift in Sources */,
+				B0158AEC20EEC67D00433281 /* QuotesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +464,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B067478420F18CBA00BB1253 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B067479720F18D4500BB1253 /* QuotesController.swift in Sources */,
+				B067479620F18D4000BB1253 /* Quotes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B067479820F18E6F00BB1253 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06747A220F18E6F00BB1253 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +493,16 @@
 			isa = PBXTargetDependency;
 			target = B0158AB720EEC30200433281 /* Jokes */;
 			targetProxy = B0158AD820EEC30400433281 /* PBXContainerItemProxy */;
+		};
+		B067478F20F18CBA00BB1253 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B067478820F18CBA00BB1253 /* JokesInfoKit */;
+			targetProxy = B067478E20F18CBA00BB1253 /* PBXContainerItemProxy */;
+		};
+		B06747A820F18E6F00BB1253 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B067479B20F18E6F00BB1253 /* TodayWidget */;
+			targetProxy = B06747A720F18E6F00BB1253 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -307,6 +521,14 @@
 				B0158AC520EEC30300433281 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B06747A320F18E6F00BB1253 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B06747A420F18E6F00BB1253 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -429,6 +651,7 @@
 		B0158AE120EEC30400433281 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7CCUH8W47;
@@ -447,6 +670,7 @@
 		B0158AE220EEC30400433281 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7CCUH8W47;
@@ -544,6 +768,106 @@
 			};
 			name = Release;
 		};
+		B067479220F18CBA00BB1253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = S7CCUH8W47;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JokesInfoKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teadoan.JokesInfoKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B067479320F18CBA00BB1253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = S7CCUH8W47;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JokesInfoKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teadoan.JokesInfoKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B06747AB20F18E6F00BB1253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7CCUH8W47;
+				INFOPLIST_FILE = TodayWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teadoan.Jokes.Jokes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B06747AC20F18E6F00BB1253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7CCUH8W47;
+				INFOPLIST_FILE = TodayWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teadoan.Jokes.Jokes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -579,6 +903,24 @@
 			buildConfigurations = (
 				B0158AE720EEC30400433281 /* Debug */,
 				B0158AE820EEC30400433281 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B067479420F18CBA00BB1253 /* Build configuration list for PBXNativeTarget "JokesInfoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B067479220F18CBA00BB1253 /* Debug */,
+				B067479320F18CBA00BB1253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B06747AA20F18E6F00BB1253 /* Build configuration list for PBXNativeTarget "TodayWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B06747AB20F18E6F00BB1253 /* Debug */,
+				B06747AC20F18E6F00BB1253 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

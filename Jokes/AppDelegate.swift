@@ -16,6 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//        QuotesController.fetchQuote { (quote) in
+//            if let quote = quote {
+//                print("\(quote.first?.quote)")
+//            }
+//            QuotesController.fetchImage(withURL: (quote?.first?.background)!, completion: { (image) in
+//                guard let image = image else {
+//                    return
+//                }
+//                print("\(image)")
+//            })
+//        }
         return true
     }
 
